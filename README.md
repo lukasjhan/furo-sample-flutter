@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./furo.svg" alt="Furo Logo" width="400" height="240">
+</p>
+
 # Furo Flutter Sample Project
 
 This is a Flutter sample project for the Furo. Check out the [Offical Docs](https://docs.furo.one) for more information.
