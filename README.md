@@ -1,16 +1,17 @@
-# flutter_application_1
+# Furo Flutter Sample Project
 
-A new Flutter project.
+This is a Flutter sample project for the Furo. Check out the [Offical Docs](https://docs.furo.one) for more information.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. Clone this repository
+2. Set up clientId in `lib/main.dart`
+3. Set up redirect uri in `lib/main.dart` and Furo console.
+4. Run Project and click login button to start authentication.
+   1. if you want to use moblie follow these steps.
+   - Android
+     - Add deeplink scheme in project/android/app/src/main/AndroidManifest.xml
+     - Set up redirect uri in `lib/main.dart` and Furo console: `scheme://auth`
+   - iOS
+     - Add deeplink scheme in project/ios/Runner/Info.plist
+     - Set up redirect uri in `lib/main.dart` and Furo console: `scheme://auth`
