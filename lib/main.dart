@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_web_auth/flutter_web_auth.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 void main() {
+  await dotenv.load(fileName: ".env");
   runApp(const MyApp());
 }
 
@@ -55,7 +57,8 @@ class _MyHomePageState extends State<MyHomePage> {
   final String _defaultMsg = 'Set Up Your Client ID';
 
   Future<void> _login() async {
-    const clientId = 'Set Up Your Client ID';
+    
+    const clientId = dotenv.env['CLIENT_ID'] || 'Set Up Your Client ID';
     if (clientId == _defaultMsg) {
       setState(() {
         _counter = _defaultMsg;
